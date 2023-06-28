@@ -1,1 +1,107 @@
+/* Barra de navegacion */
+.navbar{
+  padding: 2rem;
+  background-color: #f5f6f7 ;
+}
 
+.navbar-collapse{
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos Generales */
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2{
+  font-size: 1.5rem;
+  font-family:'Ysabeau SC', sans-serif, cursive; 
+}
+
+.seccion-obscura{
+  color: white;
+  background-color: #1b1232;
+}
+
+.seccion-titulo{
+  font-size: 2rem;
+  padding: 15px 0px;
+  font-family:'Ysabeau SC', sans-serif, cursive; 
+}
+
+.seccion-texto{
+  font-size: 1.2rem;
+  padding: 15px 5px;
+}
+
+
+/* Seccion Hero */
+.hero{
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+}
+
+.hero-principal{
+  padding: 3rem;
+}
+
+.hero-imagen-desarrollador{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+
+.hero-principal h1{
+  font-size: 2.5rem; 
+}
+
+.hero-principal h2 {
+  font-size: 1.5 rem;
+  font-family: 'Ysabeau SC', sans-serif;
+  color: #615151;
+}
+
+/* mi articulo */
+.mi-articulo{
+  
+  padding: 10px;
+}
+
+.mi-articulo .contenedor{
+  max-width: 75%;
+  text-align: center;
+}
+
+.mi-articulo .contenedor .foto-articulo{
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Adaptable (responsivo) */
+@media screen and ( max-width: 767px ){
+  .navbar-brand{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px ) {
+  .hero-inferior-imagen{
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .mi-articulo .contenedor .foto-articulo{
+    max-width: 500px;
+  }
+}
